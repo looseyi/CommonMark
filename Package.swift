@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -14,8 +14,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/SwiftDocOrg/swift-cmark.git",
-                 from: Version(0, 29, 0, buildMetadataIdentifiers: ["20210102", "9c8096a"])),
+        .package(url: "https://github.com/apple/swift-cmark.git", .revision("release/5.6"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
